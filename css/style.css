@@ -1,6 +1,7 @@
 body{
     font-family: montserrat,"helvetica neue",helvetica,arial,sans-serif;
     background-color: #A99AFF;
+    color: rgb(74, 0, 153);
 }
 
 .result-text{
@@ -9,7 +10,7 @@ body{
 }
 
 h1{
-    color: rgb(74, 0, 153)!important;
+
     text-shadow: 2px 2px gray;
     padding: .75rem 1.25rem;
 }
@@ -25,11 +26,6 @@ h1{
 .result-bar{
     margin-top: 50px;
 }
-
-.result{
-    color: white;
-}
-
 
 
 .outer {

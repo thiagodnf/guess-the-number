@@ -48,7 +48,7 @@ $(function(){
 
             $result.effect( "bounce", {}, 1200, function(){
                 $result.text("Take a Guess!");
-                $result.parent().removeClass( "alert alert-danger2" );
+                $result.parent().removeClass( "alert alert-danger" );
                 $number.val("");
                 disableInput(false);
             });
