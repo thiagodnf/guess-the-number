@@ -50,6 +50,7 @@ $(function(){
                 $result.text("Take a Guess!");
                 $result.parent().removeClass( "alert alert-danger" );
                 $number.val("");
+                $number.focus();
                 disableInput(false);
             });
 
