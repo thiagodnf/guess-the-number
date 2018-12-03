@@ -1,7 +1,7 @@
 {
 	"name": "guess-the-number",
 	"version": "1.0.0",
-	"description": "Try to guess the number!",
+	"description": "Try to guess the number between 1 and 1000",
 	"main": "server.js",
 	"scripts": {
 		"start": "node server.js"
