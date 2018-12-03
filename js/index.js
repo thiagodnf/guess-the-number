@@ -7,6 +7,7 @@ function getRandomInteger(min, max) {
 function disableInput(disable=true){
     $("#form-number #number").prop("disabled", disable);
     $("#form-number button[type='submit']").prop("disabled", disable);
+    $("#btn-give-up").prop("disabled", disable);
 }
 
 $(function(){
@@ -16,6 +17,19 @@ $(function(){
     var $result = $(".result");
 
     var attempts = 1;
+
+    $("#btn-give-up").click(function(event){
+
+        event.preventDefault();
+
+        if(confirm("Are you sure?")){
+            disableInput(true);
+            $result.html("The number I was thinking of was "+guessNumber);
+            $result.addClass( "alert alert-warning" );
+        }
+
+        return false;
+    });
 
     $("#form-number").submit(function(event){
 
