@@ -1,0 +1,54 @@
+body{
+    font-family: montserrat,"helvetica neue",helvetica,arial,sans-serif;
+    background-color: #A99AFF;
+}
+
+.result-text{
+    margin-top: 12%;
+    margin-bottom: 100px;
+}
+
+h1{
+    color: rgb(74, 0, 153)!important;
+    text-shadow: 2px 2px gray;
+    padding: .75rem 1.25rem;
+}
+
+.wizard {
+    width: 70%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 60px;
+}
+
+.result-bar{
+    margin-top: 50px;
+}
+
+.result{
+    color: white;
+}
+
+
+
+.outer {
+    display: table;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  .middle {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .inner {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    /*whatever width you want*/
+  }

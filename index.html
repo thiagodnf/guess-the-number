@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title>Guess the Number!</title>
+		<meta name="author" content="Thiago N. Ferreira">
+		<meta name="description" content="Try to guess the number!">
+		<meta name="keywords" content="guess the number, adivinhe o numero">
+		<meta name="robots" content="index, follow">
+
+        <!-- Vendors -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <!-- Custom -->
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    </head>
+	<body>
+
+        <div class="container ">
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="result-text">
+                        <h1 class="display-4 text-center result">Take a Guess!</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="outer">
+                <div class="middle">
+                    <div class="inner">
+                        <form id="form-number">
+                            <div class="input-group mb-3">
+                                <input type="number" id="number" class="form-control form-control-lg "  placeholder="Type the number between 1 and 1000" autofocus="autofocus" autocomplete="off" min="1" max="1000" step="1" required>
+                                <div class="input-group-append">
+                                    <button class="btn btn-light" type="submit">Send</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row result-bar">
+                <div class="col-8">
+
+                </div>
+                <div class="col-4 wizard">
+                    <img src="img/wizard.png" class="img-responsive wizard">
+                </div>
+            </div>
+        </div>
+
+        <!-- Vendors -->
+        <script type="text/javascript" src="js/vendor/jquery-3.3.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+        <!-- Custom -->
+        <script type="text/javascript" src="js/index.js"></script>
+        <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+    </body>
+</html>
