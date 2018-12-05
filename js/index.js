@@ -1,4 +1,6 @@
 
+var showHint = false;
+
 function getRandomInteger(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
@@ -10,9 +12,23 @@ function disableInput(disable=true){
     $("#btn-give-up").prop("disabled", disable);
 }
 
+function updatePlaceHolder(min, max){
+    if(showHint){
+        $("#number").attr("placeholder", "Type the number between "+min+" and "+max);
+        $("#number").attr("min", min);
+        $("#number").attr("max", max);
+    }else{
+        $("#number").attr("placeholder", "Type the number between 1 and 1000");
+        $("#number").attr("min", 1);
+        $("#number").attr("max", 1000);
+    }
+}
+
 $(function(){
 
     var guessNumber = getRandomInteger(1,1000);
+    var minNumber  = 1;
+    var maxNumber  = 1000;
 
     var $result = $(".result");
 
@@ -31,6 +47,11 @@ $(function(){
         return false;
     });
 
+    $('#btn-show-hint').click(function(){
+        showHint = $(this).is(':checked');
+        updatePlaceHolder(minNumber, maxNumber);
+    });
+
     $("#form-number").submit(function(event){
 
         event.preventDefault();
@@ -41,6 +62,16 @@ $(function(){
 
         if(!number){
             return;
+        }
+
+        var diffMinNumber = Math.abs(minNumber - number);
+        var diffMaxNumber = Math.abs(maxNumber - number);
+
+        console.log(diffMinNumber, diffMaxNumber)
+        if(diffMinNumber < diffMaxNumber){
+            minNumber = number;
+        }else{
+            maxNumber = number;
         }
 
         disableInput(true);
@@ -64,12 +95,14 @@ $(function(){
                 $result.text("Take a Guess!");
                 $result.parent().removeClass( "alert alert-danger" );
                 $number.val("");
-                $number.focus();
                 disableInput(false);
+                $number.focus();
             });
 
             attempts++;
         }
+
+        updatePlaceHolder(minNumber, maxNumber);
 
         return false;
     });
