@@ -64,15 +64,6 @@ $(function(){
             return;
         }
 
-        var diffMinNumber = Math.abs(minNumber - number);
-        var diffMaxNumber = Math.abs(maxNumber - number);
-
-        if(diffMinNumber < diffMaxNumber){
-            minNumber = number;
-        }else{
-            maxNumber = number;
-        }
-
         disableInput(true);
 
         if(number == guessNumber){
@@ -83,8 +74,10 @@ $(function(){
 
             if(number < guessNumber){
                 text = "Your guess is too low";
+                minNumber = number;
             }else if(number > guessNumber){
                 text = "Your guess is too high"
+                maxNumber = number;
             }
 
             $result.html(text);
