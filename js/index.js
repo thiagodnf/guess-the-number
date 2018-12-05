@@ -67,7 +67,6 @@ $(function(){
         var diffMinNumber = Math.abs(minNumber - number);
         var diffMaxNumber = Math.abs(maxNumber - number);
 
-        console.log(diffMinNumber, diffMaxNumber)
         if(diffMinNumber < diffMaxNumber){
             minNumber = number;
         }else{
