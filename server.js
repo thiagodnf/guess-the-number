@@ -1,10 +1,11 @@
 const connect = require("connect");
 const serveStatic = require("serve-static");
 const network = require("network");
-const port = process.env.PORT || 3000;
 const project = require("./package.json");
 const winston = require("winston");
 const liveReload = require("livereload");
+
+const port = process.env.PORT || 3000;
 
 const logger = winston.createLogger({
     level: "info",
