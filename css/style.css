@@ -1,67 +1,45 @@
-:root{
+:root {
     --bd-violet: #712cf9;
-    --bd-violet-rgb: 112.520718,44.062154,249.437846;
+    --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
 }
 
-body{
+body {
     background-color: #A99AFF;
     color: rgb(74, 0, 153);
 }
 
-
-
 .navbar-purple {
     background-color: transparent;
     background-image: linear-gradient(to bottom, rgba(var(--bd-violet-rgb), 1), rgba(var(--bd-violet-rgb), 0.95));
-    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15),inset 0 -1px 0 rgba(0,0,0,0.15);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15), inset 0 -1px 0 rgba(0, 0, 0, 0.15);
     color: white !important;
 }
 
-.navbar-purple a{
+.navbar-purple a {
     color: white !important;
 }
 
+.bg-purple{
+    background-color: transparent;
+    background-image: linear-gradient(to bottom, rgba(var(--bd-violet-rgb), 1), rgba(var(--bd-violet-rgb), 0.95));
+}
+
+.bg-wrong{
+    background-color: var(--bs-danger);
+}
+
+.bg-success{
+    background-color: var(--bs-success);
+}
+
+.bg-warning{
+    background-color: var(--bs-warning);
+}
+
+.result{
+    color: white;
+}
 
 .result-text{
-    margin-top: 12%;
-    margin-bottom: 100px;
+    font-size: 6vw ;
 }
-
-h1{
-    text-shadow: 2px 2px gray;
-    padding: .75rem 1.25rem;
-}
-
-.wizard {
-    width: 50%;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    margin-right: 60px;
-}
-
-.result-bar{
-    margin-top: 50px;
-}
-
-
-.outer {
-    display: table;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-  }
-
-  .middle {
-    display: table-cell;
-    vertical-align: middle;
-  }
-
-  .inner {
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-    /*whatever width you want*/
-  }
