@@ -1,6 +1,6 @@
 <img src="https://raw.githubusercontent.com/thiagodnf/guess-the-number/master/img/logo.png?token=AAG9XwrL-t72tifQ-eA47lewNBqqV9Nwks5cDnuJwA%3D%3D" width="500px">
 
-Try to guess the number between 1 and 1000
+A game for guessing a number between 1 and 1000
 
 [![GitHub Release](https://img.shields.io/github/release/thiagodnf/guess-the-number.svg)](https://github.com/thiagodnf/guess-the-number/releases/latest)
 [![GitHub contributors](https://img.shields.io/github/contributors/thiagodnf/guess-the-number.svg)](https://github.com/thiagodnf/guess-the-number/graphs/contributors)
