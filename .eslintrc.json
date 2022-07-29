@@ -1,0 +1,25 @@
+{
+    "parserOptions": {
+        "ecmaVersion": 13,
+        "ecmaFeatures": {
+            "jsx": true,
+            "modules": true,
+            "experimentalObjectRestSpread": true
+        },
+        "requireConfigFile": false
+    },
+    "rules": {
+        "semi": [
+            "error",
+            "always"
+        ],
+        "quotes": [
+            2,
+            "double"
+        ],
+        "comma-style": [
+            "error",
+            "last"
+        ]
+    }
+}

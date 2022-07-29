@@ -47,8 +47,8 @@ $(function(){
         return false;
     });
 
-    $('#btn-show-hint').click(function(){
-        showHint = $(this).is(':checked');
+    $("#btn-show-hint").click(function(){
+        showHint = $(this).is(":checked");
         updatePlaceHolder(minNumber, maxNumber);
     });
 
@@ -76,7 +76,7 @@ $(function(){
                 text = "Your guess is too low";
                 minNumber = number;
             }else if(number > guessNumber){
-                text = "Your guess is too high"
+                text = "Your guess is too high";
                 maxNumber = number;
             }
 

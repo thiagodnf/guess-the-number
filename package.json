@@ -1,11 +1,16 @@
 {
 	"name": "guess-the-number",
-	"version": "1.0.0",
+	"version": "0.0.1",
 	"description": "Try to guess the number between 1 and 1000",
+    "author": "Thiago Ferreira",
+	"license": "MIT",
+	"homepage": "https://thiagodnf.github.io/guess-the-number",
 	"main": "server.js",
 	"scripts": {
-		"start": "node server.js"
-	},
+        "dev": "nodemon server.js",
+        "lint": "npx eslint",
+        "lint-fix": "npx eslint --fix"
+    },
 	"engines": {
 		"node": ">=8.9.1"
 	},
@@ -13,14 +18,15 @@
 		"type": "git",
 		"url": "https://github.com/thiagodnf/guess-the-number.git"
 	},
-	"author": "Guess the Number!",
-	"license": "MIT",
-	"homepage": "https://thiagodnf.github.io/guess-the-number",
+    "devDependencies": {
+        "eslint": "8.20.0",
+        "nodemon": "2.0.19"
+    },
 	"dependencies": {
-		"serve-static": "^1.13.2",
-		"connect": "^3.6.6",
-		"network": "^0.4.1",
-		"winston": "^2.4.2",
-		"livereload": "^0.7.0"
+		"serve-static": "1.15.0",
+		"connect": "3.7.0",
+		"network": "0.6.1",
+		"winston": "3.8.1",
+		"livereload": "0.9.3"
 	}
 }
