@@ -1,0 +1,19 @@
+{
+    "name": "Guess The Number",
+    "short_name": "Guess The Number",
+    "icons": [
+        {
+            "src": "/images/favicons/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/favicons/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#712cf9",
+    "background_color": "#712cf9",
+    "display": "standalone"
+}
