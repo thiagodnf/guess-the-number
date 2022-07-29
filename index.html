@@ -1,80 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <title>Guess the Number</title>
-		<meta name="author" content="Thiago Ferreira">
-		<meta name="description" content="A game for guessing a number between 1 and 1000">
-		<meta name="keywords" content="game, js, jogo, guess the number, adivinhe o numero">
-		<meta name="robots" content="index, follow">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <!-- Vendors -->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <title>Guess the Number</title>
+    <meta name="author" content="Thiago Ferreira">
+    <meta name="description" content="A game for guessing a number between 1 and 1000">
+    <meta name="keywords" content="game, js, jogo, guess the number, adivinhe o numero">
+    <meta name="robots" content="index, follow">
 
-        <!-- Custom -->
-        <link rel="stylesheet" type="text/css" href="css/style.css"/>
-    </head>
-	<body>
+    <meta name="theme-color" content="#712cf9">
 
-        <div class="container ">
+    <!-- Vendors -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 
-            <div class="row">
-                <div class="col-12">
-                    <div class="result-text">
-                        <h1 class="display-4 text-center result">Take a Guess!</h1>
-                    </div>
+    <!-- Custom -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-purple ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Guess the Number</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="container ">
+
+        <div class="row">
+            <div class="col-12">
+                <div class="result-text">
+                    <h1 class="display-4 text-center result">Take a Guess!</h1>
                 </div>
             </div>
-            <div class="outer">
-                <div class="middle">
-                    <div class="inner">
-                        <form id="form-number">
-                            <div class="input-group mb-3">
-                                <input type="number" id="number" class="form-control form-control-lg "  placeholder="Type the number between 1 and 1000" autofocus="autofocus" autocomplete="off" min="1" max="1000" step="1" required>
-                                <div class="input-group-append">
-                                    <button class="btn btn-light" type="submit">Send</button>
-                                </div>
+        </div>
+        <div class="outer">
+            <div class="middle">
+                <div class="inner">
+                    <form id="form-number">
+                        <div class="input-group mb-3">
+                            <input type="number" id="number" class="form-control form-control-lg " placeholder="Type the number between 1 and 1000" autofocus="autofocus" autocomplete="off" min="1" max="1000" step="1" required>
+                            <div class="input-group-append">
+                                <button class="btn btn-light" type="submit">Send</button>
                             </div>
-                        </form>
-                        <div class="row">
-                            <div class="col-6">
-                                <button class="btn btn-danger" id="btn-give-up">Give Up</button>
-                            </div>
-                            <div class="col-6 text-right">
-                                <div class="form-group form-check">
-                                    <input type="checkbox" class="form-check-input" id="btn-show-hint">
-                                    <label class="form-check-label" for="btn-show-hint">Show Hint</label>
-                                </div>
+                        </div>
+                    </form>
+                    <div class="row">
+                        <div class="col-6">
+                            <button class="btn btn-danger" id="btn-give-up">Give Up</button>
+                        </div>
+                        <div class="col-6 text-right">
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="btn-show-hint">
+                                <label class="form-check-label" for="btn-show-hint">Show Hint</label>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row result-bar">
-                <div class="col-8">
+        </div>
+        <div class="row result-bar">
+            <div class="col-8">
 
-                </div>
-                <div class="col-4 wizard">
-                    <img src="img/wizard.png" class="img-responsive wizard">
-                </div>
+            </div>
+            <div class="col-4 wizard">
+                <img src="img/wizard.png" class="img-responsive wizard">
             </div>
         </div>
+    </div>
 
-        <!-- Vendors -->
-        <script type="text/javascript" src="js/vendor/jquery-3.3.1.min.js"></script>
+    <!-- Vendors -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
-        <!-- Custom -->
-        <script type="text/javascript" src="js/index.js"></script>
+    <!-- Custom -->
+    <script type="text/javascript" src="js/index.js"></script>
 
-        <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
-    </body>
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+
 </html>

@@ -1,8 +1,26 @@
+:root{
+    --bd-violet: #712cf9;
+    --bd-violet-rgb: 112.520718,44.062154,249.437846;
+}
+
 body{
-    font-family: montserrat,"helvetica neue",helvetica,arial,sans-serif;
     background-color: #A99AFF;
     color: rgb(74, 0, 153);
 }
+
+
+
+.navbar-purple {
+    background-color: transparent;
+    background-image: linear-gradient(to bottom, rgba(var(--bd-violet-rgb), 1), rgba(var(--bd-violet-rgb), 0.95));
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15),inset 0 -1px 0 rgba(0,0,0,0.15);
+    color: white !important;
+}
+
+.navbar-purple a{
+    color: white !important;
+}
+
 
 .result-text{
     margin-top: 12%;
@@ -10,7 +28,6 @@ body{
 }
 
 h1{
-
     text-shadow: 2px 2px gray;
     padding: .75rem 1.25rem;
 }
