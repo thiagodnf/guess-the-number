@@ -1,7 +1,7 @@
 {
 	"name": "guess-the-number",
 	"version": "0.0.1",
-	"description": "Try to guess the number between 1 and 1000",
+	"description": "A game for guessing a number between 1 and 1000",
     "author": "Thiago Ferreira",
 	"license": "MIT",
 	"homepage": "https://thiagodnf.github.io/guess-the-number",
