@@ -101,10 +101,10 @@ $(function () {
             var text = "";
 
             if (number < guessNumber) {
-                text = "Your guess is too low";
+                text = `${number} is too low`;
                 minNumber = number;
             } else if (number > guessNumber) {
-                text = "Your guess is too high";
+                text = `${number} is too high`;
                 maxNumber = number;
             }
 
