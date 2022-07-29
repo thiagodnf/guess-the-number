@@ -16,11 +16,11 @@ Access https://thiagodnf.github.io/guess-the-number/
 
 The computer will think of a random number from 1 to 1000, and ask you to guess it. The computer will tell you if each guess is too high or too low. You win if you can guess the number.
 
-This is a good game to code because it uses random numbers, loops, and input from the user in a short program. You’ll learn how to convert values to different data types, and why you would need to do this.
+This is a good game to code because it uses random numbers, loops, and input from the user in a short program. You’ll learn how to convert values to different data types, and why you would need to do this More information at https://inventwithpython.com/chapter4.html
 
-## References
+## Screenshots
 
-This game is based on https://inventwithpython.com/chapter4.html
+![Screen Shot 2022-07-29 at 4 02 01 PM](https://user-images.githubusercontent.com/114015/181835112-d3fc4707-21a3-437b-8ea0-ce7011943cbf.png)
 
 
 ## For Developers
