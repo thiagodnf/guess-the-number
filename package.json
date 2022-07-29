@@ -1,6 +1,6 @@
 {
 	"name": "guess-the-number",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"description": "A game for guessing a number between 1 and 1000",
     "author": "Thiago Ferreira",
 	"license": "MIT",
