@@ -20,8 +20,9 @@ This is a good game to code because it uses random numbers, loops, and input fro
 
 ## Screenshots
 
-![Screen Shot 2022-07-29 at 4 02 01 PM](https://user-images.githubusercontent.com/114015/181835112-d3fc4707-21a3-437b-8ea0-ce7011943cbf.png)
-
+<kbd>
+        <img class="screenshot" src="https://user-images.githubusercontent.com/114015/181835112-d3fc4707-21a3-437b-8ea0-ce7011943cbf.png"/>
+    </kbd>
 
 ## For Developers
 
